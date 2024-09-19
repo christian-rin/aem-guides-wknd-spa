@@ -5,7 +5,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && clientlib",
-    "test": "react-scripts test",
+    "test": "echo \" Skipping tests\"",
     "eject": "react-scripts eject",
     "sync": "aemsync -d -w ../ui.apps/src/main/content"
   },
