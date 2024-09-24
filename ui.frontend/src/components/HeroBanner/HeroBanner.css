@@ -1,0 +1,88 @@
+/*
+ *  Copyright 2016 Adobe Systems Incorporated
+ *
+ *  Licensed under the Apache License, Version 2.0 (the "License");
+ *  you may not use this file except in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *  Unless required by applicable law or agreed to in writing, software
+ *  distributed under the License is distributed on an "AS IS" BASIS,
+ *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the License for the specific language governing permissions and
+ *  limitations under the License.
+ */
+
+/* .less converted to .css */
+
+.wknd-HeroBanner {
+    min-height: 460px;
+    margin-bottom: 40px;
+    background: gray 50% no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.wknd-HeroBanner-title {
+    display: block;
+    margin: 0 auto 20px;
+    text-transform: uppercase;
+}
+
+.wknd-HeroBanner p {
+    margin: 0 auto;
+}
+
+.wknd-HeroBanner-title,
+.wknd-HeroBanner p {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.5);
+}
+
+.wknd-HeroBanner-title .btn {
+    text-shadow: none;
+}
+
+/* Put hero image under header component if placed below it */
+.header ~ .heroimage,
+.header ~ .target .heroimage {
+    position: relative;
+    top: calc(-1 * var(--header-height) - 30px);
+    margin-bottom: calc(-1 * var(--header-height) - 30px);
+    overflow: visible;
+}
+
+@media (max-width: 992px) { /* Replace with appropriate breakpoint */
+    .header ~ .heroimage,
+    .header ~ .target .heroimage {
+        margin-top: -40px;
+    }
+}
+
+@media (min-width: 992px) { /* Replace with appropriate breakpoint */
+    .we-HeroImage {
+        text-align: left;
+    }
+
+    .we-HeroImage .container {
+        transform: translateX(-50%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+    }
+
+    .we-HeroImage-wrapper {
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) { /* Replace with appropriate breakpoint */
+    .we-HeroImage.width-full {
+        padding: 180px 0 70px;
+    }
+}
