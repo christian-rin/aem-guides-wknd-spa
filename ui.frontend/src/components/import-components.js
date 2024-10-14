@@ -23,3 +23,4 @@ import './Custom/Custom';
 import './Card/Card';
 import './Banner/Banner'
 import './HeroBanner/HeroBanner'
+import './FacebookLogin/FacebookLogin'
